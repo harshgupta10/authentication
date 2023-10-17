@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Authentication</title>
+    <title>Login</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -39,11 +39,24 @@
 
         main {
             padding: 20px;
+            text-align: center;
+        }
+
+        .google-btn {
+            display: inline-block;
+            background-color: #4285F4;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .google-btn:hover {
+            background-color: #357AE8;
         }
     </style>
 </head>
 <body>
-
     <nav>
         <ul>
             <li><a href="/auth/logout">Logout</a></li>
@@ -52,12 +65,10 @@
         </ul>
     </nav>
     <header>
-        <h1>Authentication</h1>
-        <h2>Homepage</h2>
+        <h1>Login using...</h1>
     </header>
     <main>
-        <p>This is me trying out authentication.</p>
+        <a class="google-btn" href="/auth/google">Google+</a>
     </main>
-    
 </body>
 </html>
