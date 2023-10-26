@@ -46,7 +46,7 @@ const makeCommitBetweenMonths = (startMonth, endMonth, n) => {
 };
 
 
-const startMonth = 3;  
-const endMonth = 3;    
+const startMonth = 7;  
+const endMonth = 9;    
 
 makeCommitBetweenMonths(startMonth, endMonth, 60);
