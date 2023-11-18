@@ -46,24 +46,21 @@
 
     <nav>
         <ul>
-            <!-- <li><a href="/auth/logout">Logout</a></li>
-            <li><a href="/auth/login">Login</a></li> -->
-            <!-- to write some code that is non html we can use <% %> -->
             <% if(user){%>
-            <li><a href="/auth/logout">Logout</a></li>
-            <%}else{%>
-            <li><a href="/auth/login">Login</a></li>
-            <%}%>
+                <li><a href="/auth/logout">Logout</a></li>
+                <%}else{%>
+                <li><a href="/auth/login">Login</a></li>
+                <%}%>
             <li><a href="/">Homepage</a></li>
-            <li><a href="/profile">Profile</a></li>
         </ul>
     </nav>
     <header>
-        <h1>Authentication</h1>
-        <h2>Homepage</h2>
+        <h1>Welcome to your profile,<%=user.username%></h1>
+        
     </header>
     <main>
-        <p>This is me trying out authentication.</p>
+        <img src="<%=user.thumbnail%>" >
+        <p>Hi! <%=user.username%></p>
     </main>
     
 </body>
